@@ -17,7 +17,7 @@
   <header class="cabecalho">
     <div class="logo">Recione.dev</div>
 
-    <nav class="navbar">
+    <nav class="menu-navegacao">
       <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
       <a href="#tecnologias">Tecnologias</a>
@@ -29,173 +29,222 @@
     </nav>
   </header>
 
-<!--PERFIL-->
-<!--Esta seção ira criar o inicio do meu portifolio,
+  <!--PERFIL-->
+  <!--Esta seção ira criar o inicio do meu portifolio,
     nela sera carregada a foto de perfil, minha profição,
     e os links do meu githu e linkedin, além de uma breve descrição sobre mim -->
-<section id="inicio" class="perfil">
-  <div class="texto-perfil">
+  <section id="inicio" class="perfil">
 
-    <img
-    src="assets/eu.jpg"
-    alt="Foto de Leandro Recione"
-    class="foto-perfil" 
-    >
+    <div class="conteudo-perfil">
 
-    <h1>Leandro Recione</h1>
+      <img
+      src="assets/eu.jpg"
+      alt="Foto de Leandro Recione"
+      class="imagem-perfil" 
+      >
 
-    <h2 class="cargo">
-      Desenvolvedor Backend
-    </h2>
+      <h1>Leandro Recione</h1>
+
+      <h2 class="cargo">
+        Desenvolvedor Backend
+      </h2>
+
+      <p>
+        Estudante e entusiasta de programação focado em 
+        desenvolvimento backend com NestJS, Java e bancos de dados.
+      </p>
+
+      <div class="botoes-perfil">
+        <a 
+          href="https://github.com/leandrorecione"
+          target="_blank"
+          >
+            GitHub
+        </a>
+
+        <a 
+          href="https://www.linkedin.com/in/leandro-recione-5b6567345/"
+          target="_blank"
+          >
+            LinkedIn
+        </a>
+
+        <a href="assets/Curriculo_Leandro_Recione.pdf" download class="botao-cv">
+          Baixar CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--Sobre mim-->
+  <!--Nesta breve seção sera descrito com mais detalhes sobre mim, o que eu faço e estudo.-->
+  <section id="sobre" class="sessao sobre-mim">
+
+    <h2>Sobre Mim</h2>
 
     <p>
-      Estudante e entusiasta de programação focado em 
-      desenvolvimento backend com NestJS, Java e bancos de dados.
+      Estudante de ADS e desenvolvedor backend em constante evolução, focado em arquitetura de software e construção de APIs RESTful escaláveis. Atualmente, aplico padrões de projeto (Design Patterns) e princípios de Clean Architecture, transformando conceitos acadêmicos em projetos reais. Meu objetivo é garantir sistemas resilientes, testáveis e de alta performance através de uma modelagem de dados sólida e código limpo.
     </p>
 
-    <div class="botao-perfil">
-      <a 
-        href="https://github.com/leandrorecione"
-        target="_blank"
-        >
-          GitHub
-      </a>
+  </section>
 
-      <a 
-        href="https://www.linkedin.com/in/leandro-recione-5b6567345/"
-        target="_blank"
-        >
-          LinkedIn
-      </a>
+  <!-- TECNOLOGIAS -->
+  <!--Nesta seção irei definir e colocar as tecnologias que tenho algum conhecimento e afinidade-->
+  <section id="tecnologias" class="sessao">
 
+    <h2>Tecnologias</h2>
+
+    <div class="cartoes">
+      <div class="cartao">HTML</div>
+      <div class="cartao">CSS</div>
+      <div class="cartao">JavaScript</div>
+      <div class="cartao">TypeScript</div>
+      <div class="cartao">Node.js</div>
+      <div class="cartao">NestJS</div>
+      <div class="cartao">Java</div>
+      <div class="cartao">Spring Boot</div>
+      <div class="cartao">MySQL</div>
+      <div class="cartao">MariaDB</div>
+      <div class="cartao">Git</div>
     </div>
-  </div>
+  </section>
 
+ <!--HABILIDADES-->
+ <!--Nesta seção sera definido minhas habilidades adiministrativas--> 
+  <section id="habilidades" class="sessao">
 
+    <h2>Habilidades Administrativas</h2>
 
+    <div class="cartoes">
+      <div class="cartao">Excel</div>
+      <div class="cartao">Photoshop</div>
+      <div class="cartao">Criação de Imagens</div>
+      <div class="cartao">Organização de Documentos</div>
+      <div class="cartao">E-mail Corporativo</div>
+      <div class="cartao">Controle de Processos</div>
+      <div class="cartao">Elaboração de Relatórios</div>
+    </div>
+  </section>
 
+  <!--PROJETOS-->
+  <!--Nesta seção será dedicada a todos meus projetos já realizados e uma breve explicação sobre cada um-->
+  <section id="projetos" class="sessao">
 
+    <h2>Projetos</h2>
 
+    <div class="container-projetos">
 
-  </div>
+      <!--PROJETO HUMBURGUERIA-->
+      <div class="cartao-projeto">
 
+        <img 
+        src="assets/humburguer.jpg" 
+        alt="Projeto Sistema de Hamburgueria"
+        class="imagem-projeto"
+        >
 
-</section>
+        <h3>Sistema de Hamburgueria</h3>
 
+        <p>Sistema backend desenvolvido com NestJS, contendo CRUD completo, autenticação e integração com banco de dados MariaDB.</p>
 
+        <span>NestJS • TypeORM • MariaDB</span>
 
+      </div>
 
+      <!--PROJETO CONDOMINIO-->      
+      <div class="cartao-projeto">
 
+        <img 
+        src="assets/condominio.jpg" 
+        alt="Projeto Sistema Condominio"
+        class="imagem-projeto"
+        >
 
+        <h3>Sistema de Condomínio</h3>
 
+        <p>Projeto com diferentes níveis de acesso para moradores, síndicos e porteiros, utilizando controle de permissões e autenticação.</p>
 
+        <span>Java • Spring Boot • MySQL</span>
 
+      </div>
 
+      <!--PROJETO CADASTRO DE USUARIOS-->      
+      <div class="cartao-projeto">
 
+        <img 
+        src="assets/usuarios.jpg" 
+        alt="Cadastro de usuarios"
+        class="imagem-projeto"
+        >
 
+        <h3>Cadastro de Usuários</h3>
 
+        <p>API REST completa com implementação de métodos HTTP, validações de dados e integração com banco de dados relacional.</p>
 
+        <span>NestJS • Prisma • MySQL</span>
 
+      </div>
 
+      <!--PROJETO CADASTRO DE PRODUTOS-->      
+      <div class="cartao-projeto">
 
+        <img 
+        src="assets/produtos.jpg" 
+        alt="Cadastro de produtos"
+        class="imagem-projeto"
+        >
 
+        <h3>Cadasto de Produtos</h3>
 
+        <p>Projeto Fullstack em PHP com desenvolvimento backend, integração com banco de dados MySQL e construção do frontend da aplicação.</p>
 
+        <span>PHP • Laravel • MySQL</span>
 
+      </div>
+    </div>
+  </section>
 
+  <!-- ESTUDOS -->
+  <!--Esta seção define os conteudos estudados por mim--> 
+  <section id="estudos" class="sessao">
 
+    <h2>Estudos</h2>
 
+    <div class="cartoes">
+      <div class="cartao">Arquitetura em camadas</div>
+      <div class="cartao">POO</div>
+      <div class="cartao">NestJS</div>
+      <div class="cartao">Java Spring Boot</div>
+      <div class="cartao">Banco de Dados</div>
+      <div class="cartao">APIs REST</div>
+      <div class="cartao">Git e GitHub</div>
+    </div>
 
+  </section>
 
+  <!-- CONTATO -->
+  <!--Esta seção mostra minhas informações pessoais de contato--> 
+  <section id="contato" class="sessao">
 
+    <h2>Contato</h2>
 
+    <p>Telefone: +55 (43) 9 9193-3581</p>
+    <p>Email: Leandrorecione31@gmail.com</p>
+    <p>GitHub: github.com/leandrorecione</p>
+    <p>LinkedIn: linkedin.com/in/leandro-recione-5b6567345/</p>
 
+  </section>
 
+  <!-- RODAPE -->
+  <!--Esta seção define o rodapé da minha pagina-->
+  <footer class="rodape">
 
+    <p>© 2026 - Recione.dev</p>
 
+  </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!--Conecta o javascript ao html-->
+  <script src="script.js"></script>
 
 </body>
 </html>
